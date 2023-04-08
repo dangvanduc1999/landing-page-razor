@@ -1,0 +1,118 @@
+/* variable */
+:root {
+  --height-banner: 300px;
+  --height-left-item: 50px;
+  --height-right-bar: calc(100vh - var(--height-banner) - 100px);
+  --border-radius: 8px;
+
+  /* color */
+  --pj-primary: #bce822;
+  --pj-text-primary: #000000;
+  --gray: #e4e4e6;
+}
+
+html {
+  font-family: "Roboto", "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.banner-wrapper {
+  width: 100%;
+  height: var(--height-banner);
+}
+.left-bar > .left-item,
+.left-bar > .accordion > .accordion-item > .accordion-header > button.left-item,
+button.left-item-child,
+.right-item {
+  width: 100%;
+  height: var(--height-left-item);
+  border-radius: var(--border-radius);
+  background-color: var(--pj-primary);
+  color: var(--pj-text-primary);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+button.left-item-child {
+  background-color: #d4ee6b;
+  font-weight: 500;
+  font-size: 13px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#leftButtonChild {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+.left-bar > .accordion > .accordion-item {
+  border-radius: var(--border-radius);
+  border-top: none;
+  border-bottom: none;
+}
+html .accordion-parent {
+  /* background-color: #eef8c7; */
+  background-color: #ceeb63;
+}
+.list-group-item.option {
+  background-color: #eef8c7;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.list-group-item.option:hover {
+  color: var(--pj-primary);
+  background: #000;
+}
+.pendding {
+  animation-name: penddingAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transform-origin: center center;
+}
+
+.spin {
+  animation-name: spinAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
+.rightBar-wrapper {
+  background-color: var(--gray);
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  height: var(--height-right-bar);
+}
+.rightBar-wrapper > .right-item {
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+@keyframes penddingAnimation {
+  0% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(-120deg);
+  }
+}
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
