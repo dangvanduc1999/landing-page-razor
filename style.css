@@ -68,7 +68,8 @@ html .accordion-parent {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.list-group-item.option:hover {
+.list-group-item.option:hover,
+.list-group-item.option.option-prize-active {
   color: var(--pj-primary);
   background: #000;
 }

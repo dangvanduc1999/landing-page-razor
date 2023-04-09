@@ -152,6 +152,7 @@
                           data-bs-target="#collapseOne-child"
                           aria-expanded="false"
                           aria-controls="collapseOne-child"
+                          prize-parent="month"
                         >
                           GIẢI THÁNG
                         </button>
@@ -168,6 +169,8 @@
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseOne"
+                              prize-parent="month"
+                              prize-child-key="month-1"
                             >
                               Thẻ cào mobile 20k
                             </li>
@@ -176,6 +179,8 @@
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseOne"
+                              prize-parent="month"
+                              prize-child-key="month-2"
                             >
                               Thẻ cào mobile 50k
                             </li>
@@ -184,6 +189,8 @@
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseOne"
+                              prize-parent="month"
+                              prize-child-key="month-3"
                             >
                               BỘ DAO CẠO 6 LƯỠI DORCO PACE 6 PLUS cao cấp
                             </li>
@@ -200,6 +207,7 @@
                           data-bs-target="#collapsetwo-child"
                           aria-expanded="false"
                           aria-controls="collapsetwo-child"
+                          prize-parent="quater"
                         >
                           GIẢI QÚY <br />
                           IPHONE 14 PRO
@@ -217,6 +225,8 @@
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseOne"
+                              prize-parent="quater"
+                              prize-child-key="quater-1"
                             >
                               Thẻ cào mobile 20k
                             </li>
@@ -225,6 +235,8 @@
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseOne"
+                              prize-parent="quater"
+                              prize-child-key="quater-2"
                             >
                               Thẻ cào mobile 50k
                             </li>
@@ -233,6 +245,8 @@
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseOne"
+                              prize-parent="quater"
+                              prize-child-key="quater-3"
                             >
                               BỘ DAO CẠO 6 LƯỠI DORCO PACE 6 PLUS cao cấp
                             </li>
@@ -252,11 +266,20 @@
         <!-- region button loading -->
         <div class="col-4">
           <div
-            class="w-75 mx-auto h-100 d-flex align-items-center justify-content-center px-2"
+            class="w-75 mx-auto h-100 d-flex align-items-center justify-content-center px-2 position-relative"
           >
-            <div class="w-100 pendding px-6" id="btn-spin">
+            <div class="w-100 px-6 pendding" id="btn-spin">
               <img
                 src="./razor.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="razor"
+              />
+            </div>
+            <div
+              class="w-50 px-6 position-absolute top-50 translate-middle-x translate-middle-y"
+            >
+              <img
+                src="./razor-image-test-removebg-preview.png"
                 class="w-100 h-100 object-fit-cover"
                 alt="razor"
               />
