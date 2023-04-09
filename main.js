@@ -6,6 +6,7 @@ const btnCollapseOne = $("#btnCollapseOne");
 const btnSpin = $("#btn-spin");
 const toast = $("#liveToast");
 const myModal = new bootstrap.Modal($("#exampleModal"));
+const btnContiue = $(".btn-pj");
 //===== END CONSTANT ELEMENT  REGION==== //
 
 //=====INIT REGION ==== //
@@ -66,4 +67,9 @@ btnSpin.addEventListener("click", () => {
     // handle logic show modal here
     myModal.show();
   });
+});
+btnContiue.addEventListener("click", (e) => {
+  myModal.toggle();
+  btnSpinState.setState("pendding");
+  btnTextPrice.innerHTML = "Chọn giải thưởng";
 });
