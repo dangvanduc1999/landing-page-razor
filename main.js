@@ -72,6 +72,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+const DEFAULT_TIME_SCROLL = 5000;
 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast);
 const btnTextPrizeState = new State(btnTextPrice, false);
 const btnSpinState = new State(btnSpin, "pendding", handleSpin);
@@ -124,3 +125,28 @@ btnContiue.addEventListener("click", (e) => {
   btnSpinState.setState("pendding");
   btnTextPrice.innerHTML = "Chọn giải thưởng";
 });
+
+//auto scroll down
+function autoScrollDown() {
+  const element = $("#scroll-table");
+  if (element.scrollHeight > element.clientHeight) {
+    const heightDifference = element.scrollHeight - element.clientHeight;
+    const animationDuration = 1000; // thời gian cuộn mượt (ms)
+    const framesPerSecond = 60; // số khung hình trên giây
+    const frameIncrement =
+      heightDifference / ((animationDuration / 1000) * framesPerSecond);
+    let scrollTop = element.scrollTop;
+    const animation = () => {
+      scrollTop += frameIncrement;
+      if (scrollTop >= heightDifference) {
+        element.scrollTop = heightDifference;
+      } else {
+        element.scrollTop = scrollTop;
+        requestAnimationFrame(animation);
+      }
+    };
+    requestAnimationFrame(animation);
+  }
+}
+
+setInterval(autoScrollDown, DEFAULT_TIME_SCROLL);
