@@ -1,7 +1,7 @@
 /* variable */
 :root {
-  --height-banner: 300px;
-  --height-left-item: 50px;
+  --height-banner: 304px;
+  --height-left-item: 57px;
   --height-right-bar: calc(100vh - var(--height-banner) - 100px);
   --border-radius: 8px;
 
@@ -10,9 +10,16 @@
   --pj-text-primary: #000000;
   --gray: #e4e4e6;
 }
+@font-face {
+  font-family: "myFont";
+  src: url("./font/DejaVuSans.ttf") format("truetype"),
+    url("./font/DejaVuSans-Bold.ttf") format("truetype"),
+    url("./font/DejaVuSans-BoldOblique.ttf") format("truetype"),
+    url("./font/DejaVuSansCondensed.ttf") format("truetype");
+}
 
 html {
-  font-family: "Roboto", "Inter", sans-serif;
+  font-family: "myFont";
 }
 * {
   margin: 0;
@@ -25,7 +32,6 @@ body {
 }
 .banner-wrapper {
   width: 100%;
-  height: var(--height-banner);
 }
 .left-bar > .left-item,
 .left-bar > .accordion > .accordion-item > .accordion-header > button.left-item,
@@ -37,16 +43,19 @@ button.left-item-child,
   background-color: var(--pj-primary);
   color: var(--pj-text-primary);
   cursor: pointer;
+  font-size: 24px;
   outline: none;
   border: none;
   text-transform: uppercase;
+  font-weight: 800;
 }
 button.left-item-child {
-  background-color: #d4ee6b;
+  background-color: rgba(237, 249, 201);
+  font-size: 22px;
   font-weight: 500;
-  font-size: 13px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  padding: 10px 0px;
 }
 #leftButtonChild {
   border-top-left-radius: 0;
@@ -67,6 +76,8 @@ html .accordion-parent {
   background-color: #eef8c7;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-size: 22px;
+  font-weight: 600;
 }
 .list-group-item.option:hover,
 .list-group-item.option.option-prize-active {
@@ -114,15 +125,18 @@ html .accordion-parent {
   border-radius: 8px;
   background-color: #000000;
 }
-
+.text-info-pj {
+  margin-top: 15px;
+  margin-bottom: 32px;
+}
 /* animation */
 
 @keyframes penddingAnimation {
   0% {
-    transform: rotate(120deg);
+    transform: rotate(-45deg);
   }
   100% {
-    transform: rotate(-120deg);
+    transform: rotate(45deg);
   }
 }
 @keyframes spinAnimation {
