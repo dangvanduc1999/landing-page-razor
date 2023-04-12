@@ -26,187 +26,192 @@
   </head>
   <body>
     <!-- Banner region -->
-    <div class="banner-wrapper">
-      <div id="carouselExampleDark" class="carousel h-100 carousel-dark slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner h-100">
-          <div class="carousel-item h-100 active" data-bs-interval="10000">
-            <img
-              src="./banner.png"
-              class="d-block w-100 object-fit-cover"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item h-100" data-bs-interval="10000">
-            <img
-              src="./banner.png"
-              class="d-block w-100 object-fit-cover"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
+    <div class="background-pj">
+      <div class="banner-wrapper">
+        <div
+          id="carouselExampleDark"
+          class="carousel h-100 carousel-dark slide"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <!-- end banner region -->
-    <p class="text-center mx-auto fs-5 mt-3 text-uppercase text-info-pj">
-      Người tham gia gửi thông tin về fanpage và đã được xác nhận thông tin hợp
-      lệ <br />
-      từ [HH:MM],[DD/MM] ĐẾN [HH:MM],[DD/MM]
-    </p>
-    <!-- content region -->
-    <div class="container text-center">
-      <div class="row">
-        <!-- left barr -->
-        <div class="col-4 left-bar">
-          <div
-            class="left-item text-center d-flex align-items-center justify-content-center fw-bold mb-3"
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item h-100 active" data-bs-interval="10000">
+              <img
+                src="./banner.png"
+                class="d-block w-100 object-fit-cover"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item h-100" data-bs-interval="10000">
+              <img
+                src="./banner.png"
+                class="d-block w-100 object-fit-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
           >
-            Nhập dữ liệu
-          </div>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- end banner region -->
+      <p class="text-center mx-auto mt-3 text-uppercase text-info-pj">
+        Người tham gia gửi thông tin về fanpage và đã được xác nhận thông tin
+        hợp lệ <br />
+        từ [HH:MM],[DD/MM] ĐẾN [HH:MM],[DD/MM]
+      </p>
+      <!-- content region -->
+      <div class="container text-center">
+        <div class="row">
+          <!-- left barr -->
+          <div class="col-12 col-sm-12 col-lg-4 left-bar mb-5">
+            <div
+              class="left-item text-center d-flex align-items-center justify-content-center fw-bold mb-3"
+            >
+              Nhập dữ liệu
+            </div>
 
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <button
-                  id="btnTextPrice"
-                  class="left-item text-center d-flex align-items-center justify-content-center fw-bold"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                  data-state="false"
-                >
-                  Chọn giải thưởng
-                </button>
-              </div>
-              <div id="collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body accordion-parent p-0">
-                  <div class="accordion" id="accordion-child">
-                    <div class="accordion-item border border-0">
-                      <div class="accordion-header">
-                        <button
-                          class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-0"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne-child"
-                          aria-expanded="false"
-                          aria-controls="collapseOne-child"
-                          prize-parent="month"
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button
+                    id="btnTextPrice"
+                    class="left-item text-center d-flex align-items-center justify-content-center fw-bold"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    data-state="false"
+                  >
+                    Chọn giải thưởng
+                  </button>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body accordion-parent p-0">
+                    <div class="accordion" id="accordion-child">
+                      <div class="accordion-item border border-0">
+                        <div class="accordion-header">
+                          <button
+                            class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-0"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne-child"
+                            aria-expanded="false"
+                            aria-controls="collapseOne-child"
+                            prize-parent="month"
+                          >
+                            GIẢI THÁNG
+                          </button>
+                        </div>
+                        <div
+                          id="collapseOne-child"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordion-child"
                         >
-                          GIẢI THÁNG
-                        </button>
-                      </div>
-                      <div
-                        id="collapseOne-child"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordion-child"
-                      >
-                        <div class="accordion-body border border-0 p-0">
-                          <ul class="list-group list-group-flush">
-                            <li
-                              class="list-group-item option border-top border-0"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne"
-                              prize-parent="month"
-                              prize-child-key="month-1"
-                            >
-                              Thẻ cào mobile 20k
-                            </li>
-                            <li
-                              class="list-group-item option border-0"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne"
-                              prize-parent="month"
-                              prize-child-key="month-2"
-                            >
-                              Thẻ cào mobile 50k
-                            </li>
-                            <li
-                              class="list-group-item option border-0"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne"
-                              prize-parent="month"
-                              prize-child-key="month-3"
-                            >
-                              BỘ DAO CẠO 6 LƯỠI DORCO PACE 6 PLUS cao cấp
-                            </li>
-                          </ul>
+                          <div class="accordion-body border border-0 p-0">
+                            <ul class="list-group list-group-flush">
+                              <li
+                                class="list-group-item option border-top border-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                prize-parent="month"
+                                prize-child-key="month-1"
+                              >
+                                Thẻ cào mobile 20k
+                              </li>
+                              <li
+                                class="list-group-item option border-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                prize-parent="month"
+                                prize-child-key="month-2"
+                              >
+                                Thẻ cào mobile 50k
+                              </li>
+                              <li
+                                class="list-group-item option border-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                prize-parent="month"
+                                prize-child-key="month-3"
+                              >
+                                BỘ DAO CẠO 6 LƯỠI DORCO PACE 6 PLUS cao cấp
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="accordion-item border border-0">
-                      <div class="accordion-header">
-                        <button
-                          id="leftButtonChild"
-                          class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-top"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapsetwo-child"
-                          aria-expanded="false"
-                          aria-controls="collapsetwo-child"
-                          prize-parent="quater"
+                      <div class="accordion-item border border-0">
+                        <div class="accordion-header">
+                          <button
+                            id="leftButtonChild"
+                            class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-top"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsetwo-child"
+                            aria-expanded="false"
+                            aria-controls="collapsetwo-child"
+                            prize-parent="quater"
+                          >
+                            GIẢI QÚY <br />
+                          </button>
+                        </div>
+                        <div
+                          id="collapsetwo-child"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordion-child"
                         >
-                          GIẢI QÚY <br />
-                        </button>
-                      </div>
-                      <div
-                        id="collapsetwo-child"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordion-child"
-                      >
-                        <div class="accordion-body border border-0 p-0">
-                          <ul class="list-group list-group-flush">
-                            <li
-                              class="list-group-item option border-top"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne"
-                              prize-parent="quater"
-                              prize-child-key="quater-1"
-                            >
-                              Iphone 14 PRO
-                            </li>
-                          </ul>
+                          <div class="accordion-body border border-0 p-0">
+                            <ul class="list-group list-group-flush">
+                              <li
+                                class="list-group-item option border-top"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                prize-parent="quater"
+                                prize-child-key="quater-1"
+                              >
+                                Iphone 14 PRO
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -215,230 +220,230 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- end left bar -->
+          <!-- end left bar -->
 
-        <!-- region button loading -->
-        <div class="col-4">
-          <div
-            class="w-75 mx-auto h-100 d-flex align-items-center flex-column px-2 position-relative"
-          >
-            <div class="w-75 px-6 mb-5" style="height: 100px">
-              <img
-                src="./razor-image-test-removebg-preview.png"
-                class="w-100 h-100 object-fit-contain"
-                alt="razor"
-              />
-            </div>
-            <div class="px-6 mt-4 pendding" id="btn-spin" style="width: 80%">
-              <img
-                src="./raizor-png-final.png"
-                class="w-100 h-100 object-fit-cover"
-                alt="razor"
-              />
+          <!-- region button loading -->
+          <div class="col-12 col-sm-12 col-lg-4 mb-sm-5 mb-md-5 mb-5">
+            <div
+              class="w-75 mx-auto h-100 d-flex align-items-center flex-column px-2 position-relative mb-sm-3"
+            >
+              <div class="w-75 px-6 mb-5" style="height: 100px">
+                <img
+                  src="./razor-image-test-removebg-preview.png"
+                  class="w-100 h-100 object-fit-contain"
+                  alt="razor"
+                />
+              </div>
+              <div class="px-6 mt-4 pendding" id="btn-spin" style="width: 80%">
+                <img
+                  src="./raizor-png-final.png"
+                  class="w-100 h-100 object-fit-cover"
+                  alt="razor"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <!-- region right bar -->
-        <div class="col-4">
-          <div class="rightBar-wrapper w-full d-flex flex-column">
-            <div
-              class="right-item border-0 d-flex align-items-center justify-content-center fw-bold"
-            >
-              DANH SÁCH TRÚNG THƯỞNG
-            </div>
-            <div
-              id="scroll-table"
-              class="flex-fill row-list px-3 pt-3 w-100 h-100 overflow-auto"
-            >
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
+          <!-- region right bar -->
+          <div class="col-12 col-sm-12 col-lg-4">
+            <div class="rightBar-wrapper w-full d-flex flex-column">
+              <div
+                class="right-item border-0 d-flex align-items-center justify-content-center fw-bold"
+              >
+                DANH SÁCH TRÚNG THƯỞNG
               </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
+              <div
+                id="scroll-table"
+                class="flex-fill row-list px-3 pt-3 w-100 h-100 overflow-auto"
+              >
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
 
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
 
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
-              </div>
-              <div class="row-item d-flex mb-3">
-                <div>1</div>
-                <div class="flex-fill text-start mx-3">Nguyen Van A</div>
-                <div class="mx-2">XXX</div>
-                <div>XXXXXXXXXXXXX</div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
+                <div class="row-item d-flex mb-3 right-item-pj">
+                  <div>1</div>
+                  <div class="flex-fill text-start mx-3">Nguyen Van A</div>
+                  <div class="mx-2">XXX</div>
+                  <div>XXXXXXXXXXXXX</div>
+                </div>
               </div>
             </div>
           </div>

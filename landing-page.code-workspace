@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../Downloads/dejavu-sans"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "landing-page"
+  }
+}

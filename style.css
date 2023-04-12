@@ -33,6 +33,15 @@ body {
 .banner-wrapper {
   width: 100%;
 }
+.background-pj {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url("./background.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .left-bar > .left-item,
 .left-bar > .accordion > .accordion-item > .accordion-header > button.left-item,
 button.left-item-child,
@@ -145,5 +154,56 @@ html .accordion-parent {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .list-group-item.option {
+    font-size: 18px;
+  }
+  .left-bar > .left-item,
+  .left-bar
+    > .accordion
+    > .accordion-item
+    > .accordion-header
+    > button.left-item,
+  button.left-item-child,
+  .right-item {
+    font-size: 18px;
+  }
+  button.left-item-child {
+    font-size: 18px;
+  }
+  .right-item-pj > * {
+    font-size: 12px !important;
+  }
+
+  .text-info-pj {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .list-group-item.option {
+    font-size: 16px;
+  }
+  .left-bar > .left-item,
+  .left-bar
+    > .accordion
+    > .accordion-item
+    > .accordion-header
+    > button.left-item,
+  button.left-item-child,
+  .right-item {
+    font-size: 16px;
+  }
+  button.left-item-child {
+    font-size: 16px;
+  }
+  .right-item-pj > * {
+    font-size: 12px !important;
+  }
+
+  .text-info-pj {
+    font-size: 16px;
   }
 }
