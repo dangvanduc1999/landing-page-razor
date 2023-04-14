@@ -33,7 +33,7 @@
           class="carousel h-100 carousel-dark slide"
         >
           <div class="carousel-indicators">
-            <button
+            <!-- <button
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="0"
@@ -52,7 +52,7 @@
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button>
+            ></button> -->
           </div>
           <div class="carousel-inner h-100">
             <div class="carousel-item h-100 active" data-bs-interval="10000">
@@ -62,15 +62,15 @@
                 alt="..."
               />
             </div>
-            <div class="carousel-item h-100" data-bs-interval="10000">
+            <!-- <div class="carousel-item h-100" data-bs-interval="10000">
               <img
                 src="./banner.png"
                 class="d-block w-100 object-fit-cover"
                 alt="..."
               />
-            </div>
+            </div> -->
           </div>
-          <button
+          <!-- <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleDark"
@@ -87,7 +87,7 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> -->
         </div>
       </div>
       <!-- end banner region -->
@@ -123,12 +123,16 @@
                   </button>
                 </div>
                 <div id="collapseOne" class="accordion-collapse collapse show">
-                  <div class="accordion-body accordion-parent p-0">
+                  <div
+                    class="accordion-body accordion-parent p-0 bg-transparent"
+                  >
                     <div class="accordion" id="accordion-child">
                       <div class="accordion-item border border-0">
-                        <div class="accordion-header">
+                        <div
+                          class="accordion-header bg-transparent border-bottom"
+                        >
                           <button
-                            class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-0"
+                            class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-1"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseOne-child"
                             aria-expanded="false"
@@ -183,7 +187,7 @@
                         <div class="accordion-header">
                           <button
                             id="leftButtonChild"
-                            class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-top"
+                            class="left-item-child text-center d-flex align-items-center justify-content-center fw-bold w-100 border-top border-bottom-1"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapsetwo-child"
                             aria-expanded="false"
@@ -226,16 +230,16 @@
           <!-- region button loading -->
           <div class="col-12 col-sm-12 col-lg-4 mb-sm-5 mb-md-5 mb-5">
             <div
-              class="w-75 mx-auto h-100 d-flex align-items-center flex-column px-2 position-relative mb-sm-3"
+              class="w-75 mx-auto h-100 d-flex align-items-center justify-content-center flex-column px-2 position-relative mb-sm-3"
             >
-              <div class="w-75 px-6 mb-5" style="height: 100px">
+              <!-- <div class="w-75 px-6 mb-5" style="height: 100px">
                 <img
                   src="./razor-image-test-removebg-preview.png"
                   class="w-100 h-100 object-fit-contain"
                   alt="razor"
                 />
-              </div>
-              <div class="px-6 mt-4 pendding" id="btn-spin" style="width: 80%">
+              </div> -->
+              <div class="px-6 mt-4 pendding" id="btn-spin" style="width: 90%">
                 <img
                   src="./raizor-png-final.png"
                   class="w-100 h-100 object-fit-cover"

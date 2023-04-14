@@ -1,14 +1,14 @@
 /* variable */
 :root {
   --height-banner: 304px;
-  --height-left-item: 57px;
+  --height-left-item: 70px;
   --height-right-bar: calc(100vh - var(--height-banner) - 100px);
-  --border-radius: 8px;
+  --border-radius: 22px;
 
   /* color */
   --pj-primary: #bce822;
   --pj-text-primary: #000000;
-  --gray: #e4e4e6;
+  --gray: #e4e4e678;
 }
 @font-face {
   font-family: "myFont";
@@ -44,7 +44,6 @@ body {
 }
 .left-bar > .left-item,
 .left-bar > .accordion > .accordion-item > .accordion-header > button.left-item,
-button.left-item-child,
 .right-item {
   width: 100%;
   height: var(--height-left-item);
@@ -52,20 +51,38 @@ button.left-item-child,
   background-color: var(--pj-primary);
   color: var(--pj-text-primary);
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   outline: none;
   border: none;
   text-transform: uppercase;
   font-weight: 800;
 }
 button.left-item-child {
-  background-color: rgba(237, 249, 201);
-  font-size: 22px;
+  width: 100%;
+  height: var(--height-left-item);
+  border-radius: var(--border-radius);
+  color: var(--pj-text-primary);
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
   font-weight: 500;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 10px 0px;
+  background-color: transparent;
 }
+.accordion-item,
+#collapseOne-child,
+#collapsetwo-child,
+.list-group-item {
+  background-color: rgba(237, 249, 201, 0.4);
+  overflow: hidden;
+}
+
 #leftButtonChild {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -75,14 +92,11 @@ button.left-item-child {
 .left-bar > .accordion > .accordion-item {
   border-radius: var(--border-radius);
   border-top: none;
-  border-bottom: none;
 }
 html .accordion-parent {
-  /* background-color: #eef8c7; */
   background-color: #ceeb63;
 }
 .list-group-item.option {
-  background-color: #eef8c7;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-size: 22px;
@@ -95,16 +109,17 @@ html .accordion-parent {
 }
 .pendding {
   animation-name: penddingAnimation;
-  animation-duration: 3s;
+  animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   transform-origin: center center;
+  cursor: pointer;
 }
 
 .spin {
   animation-name: spinAnimation;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;
@@ -138,6 +153,10 @@ html .accordion-parent {
   margin-top: 15px;
   margin-bottom: 32px;
 }
+.right-item,
+.left-item {
+  border-bottom: 2px solid white !important;
+}
 /* animation */
 
 @keyframes penddingAnimation {
@@ -158,7 +177,7 @@ html .accordion-parent {
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .list-group-item.option {
-    font-size: 18px;
+    font-size: 17px;
   }
   .left-bar > .left-item,
   .left-bar
@@ -168,10 +187,36 @@ html .accordion-parent {
     > button.left-item,
   button.left-item-child,
   .right-item {
-    font-size: 18px;
+    font-size: 17px;
   }
   button.left-item-child {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .right-item-pj > * {
+    font-size: 12px !important;
+  }
+
+  .text-info-pj {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .list-group-item.option {
+    font-size: 15px;
+  }
+  .left-bar > .left-item,
+  .left-bar
+    > .accordion
+    > .accordion-item
+    > .accordion-header
+    > button.left-item,
+  button.left-item-child,
+  .right-item {
+    font-size: 15px;
+  }
+  button.left-item-child {
+    font-size: 15px;
   }
   .right-item-pj > * {
     font-size: 12px !important;
@@ -179,31 +224,5 @@ html .accordion-parent {
 
   .text-info-pj {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .list-group-item.option {
-    font-size: 16px;
-  }
-  .left-bar > .left-item,
-  .left-bar
-    > .accordion
-    > .accordion-item
-    > .accordion-header
-    > button.left-item,
-  button.left-item-child,
-  .right-item {
-    font-size: 16px;
-  }
-  button.left-item-child {
-    font-size: 16px;
-  }
-  .right-item-pj > * {
-    font-size: 12px !important;
-  }
-
-  .text-info-pj {
-    font-size: 16px;
   }
 }
