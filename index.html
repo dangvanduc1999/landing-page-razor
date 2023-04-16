@@ -456,11 +456,12 @@
     </div>
     <!-- Toast -->
     <div
-      class="toast align-items-center text-bg-primary border-0"
+      class="toast align-items-center text-bg-primary border-0 position-fixed"
       role="alert"
       aria-live="assertive"
       aria-atomic="true"
       id="liveToast"
+      style="z-index: 9999999; top: 5%; right: 2%"
     >
       <div class="d-flex">
         <div class="toast-body">Vui lòng chọn giải thưởng trước khi quay</div>
@@ -483,12 +484,14 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content customModalContent">
           <div class="modal-header border-0">
-            <button
-              type="button"
-              class="btn-close bg-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <div class="ms-auto" id="btn-close-pj">
+              <button
+                type="button"
+                class="btn-close bg-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
           <div class="modal-body">
             <h3 class="title text-uppercase fw-bold text-center fs-3">

@@ -7,6 +7,7 @@ const btnSpin = $("#btn-spin");
 const toast = $("#liveToast");
 const myModal = new bootstrap.Modal($("#exampleModal"));
 const btnContiue = $(".btn-pj");
+const btnCloseModal = $("#btn-close-pj");
 //===== END CONSTANT ELEMENT  REGION==== //
 
 //=====INIT REGION ==== //
@@ -107,6 +108,7 @@ listGroupItemPrice.forEach((element) => {
 
 btnSpin.addEventListener("click", () => {
   if (!btnTextPrizeState.state) {
+    toastBootstrap.show();
     return toastBootstrap.show();
   }
   btnSpinState.setState("spin");
@@ -124,6 +126,23 @@ btnContiue.addEventListener("click", (e) => {
   myModal.toggle();
   btnSpinState.setState("pendding");
   btnTextPrice.innerHTML = "Chọn giải thưởng";
+  btnTextPrizeState.setState(false);
+  currentPrize.setState({
+    prizeChildKey: null,
+    prizeParent: null,
+    labelPrize: "",
+  });
+});
+btnCloseModal.addEventListener("click", (e) => {
+  myModal.toggle();
+  btnSpinState.setState("pendding");
+  btnTextPrice.innerHTML = "Chọn giải thưởng";
+  btnTextPrizeState.setState(false);
+  currentPrize.setState({
+    prizeChildKey: null,
+    prizeParent: null,
+    labelPrize: "",
+  });
 });
 
 //auto scroll down
