@@ -151,8 +151,14 @@ html .accordion-parent {
   background-color: #000000;
 }
 .text-info-pj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 15px;
   margin-bottom: 32px;
+}
+.text-info-pj > * {
+  display: inline-flex;
 }
 .right-item,
 .left-item {
